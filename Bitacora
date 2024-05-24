@@ -1,0 +1,31 @@
+Los pasos para desplegar el siguiente proyecto se basan en la creación de una plantilla en Angular que permita verificar cuáles son los cambios realizados. 
+
+Seguidamente de dicha creación, se instalan los módulos requeridos con el comando npm install en la consola.
+
+Posterior a esto, se trabaja en el proyecto modificando su contenido para hacerlo adecuado para el fin requerido. 
+
+Cuando este proyecto cumple con ciertos estándares estéticos y se demuestra que efectivamente los cambios realizados se notan, se procede al armado de la aplicación.
+
+Esto se realiza mediante el comando npm run build, el cual crea una carpeta dist con archivos que utilizaremos en el motor de NGINX. 
+
+Este último, una vez instalado en la PC, solo necesita que se le haga clic al ícono del ejecutable para comenzar a funcionar.
+
+Se procede a agregar los archivos del dist del proyecto de Angular en la carpeta html del NGINX, lo cual hace que bajo la IP 192.168.50.37 se empiece a correr y visualizar el proyecto. 
+
+Una vez se logra esta relación, se procede a armar un perfil en AWS, el cual brinda una infinidad de soluciones de todo tipo para lo que es desarrollo de software.
+
+Entre estas soluciones, AWS brinda ciertos DNS donde se puede incluir la IP anteriormente mencionada. También se incluye el hostname conseguido en otro sitio, tales como Namecheap, el cual es reivaj93developer. 
+
+Posterior a esto, se crea el registro del record (irónicamente) con el cual se realiza el último paso para hacer el despliegue y publicación del proyecto.
+
+Este proceso puede tomar de 24 a 48 horas en verse reflejado. Además, por falta de coordinación, el host se encuentra caído por una verificación de dos pasos que ya se logró hacer; sin embargo, a la fecha de hoy faltan 2 días para que se complete el proceso. 
+
+Finalmente, el proyecto queda registrado bajo el link http://reivaj93developer.com/.
+
+Todo esto en conjunto se procede a borrar los node_modules del proyecto en Angular con el comando Remove-Item -Recurse -Force .\node_modules. 
+
+Esto con el objetivo de no sobrecargar el archivo cuando sea subido a Git.
+
+Una vez subido el proyecto en GitHub bajo el link git@github.com:reivaj93/FinalProject.git, se finaliza el proyecto y se crea la presente bitácora.
+
+PD: Lo cambios ya estan reflejados, esto por medio de mi intensidad y la de mi esposa de estar accesando al sitio web desde variados dispositivos (posiblemente acelerando el proceso, alrededor de 32 min).
